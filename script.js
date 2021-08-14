@@ -1,6 +1,6 @@
 
 
-function clicou(){
+/* function clicou(){
      var p = document.getElementById("paragrafoEscondido")
     p.style.visibility = "visible"
 }
@@ -11,3 +11,4 @@ function retirou(){
 }
 
 
+ */

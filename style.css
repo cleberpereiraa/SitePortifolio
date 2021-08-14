@@ -1,116 +1,61 @@
-    /*modificando o body*/
 body{
+    margin: 0%;
+    padding: 0%;
+    width: 1300px;
+    height: 2000px;
+    /* background-color: #3f3f3f;   */ 
+    background-color: #3f3f3f;
     
-    padding: 0px;
-    background-color: rgb(71, 73, 68);
-    
-    height: 1000px;/***depois mudar*/
 }
-    /*heade*/
+.Lihome{
+    color: yellow;
+    text-shadow: 0.4px  0.8px rgb(248, 242, 242)
+}
 #header{
-    
-    height:700px;
-    max-width: 1290px;
     margin: auto;
-}
-/*modificando a lista barra de menu*/
-ul{ 
-   margin-right: 50px;
-   margin-left: -25px;
-  
-}
-a{
-    text-decoration: none;
-}
-li{
+    max-width: 1200px;
+    background-image: url("img/Sem\ títul00o.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 700px;
     
-    color: white;
-    list-style: none;
-    transition: all .2s linear;
-    width: 100%;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 10pt;
-    transition: all .2s linear;
-    border-bottom: 2px solid #222;
-    padding: 15px;
-    border-radius: 10px;
-    text-align: center;
-    
-
-}
-li:hover{
-    background-color: rgb(235, 235, 33);
-    color: black;
-}
-#menu{
-    position: absolute;
-    width: 100%; 
-    top: 60px;
- }
-/*****************/
-
-#check{
-    display: none;
-}
-/*escondendo a barra de menu*/
-#check:checked ~ .barra{
-    transform: translateX(-300px);
-}
-/*stylo e fazendo barra de menu aparecer*/
-.barra{
-    background-color: rgba(51, 51, 51, 0.459);
-    height: 100%;
-    width: 250px;
-    transition: all .2s linear;
-    position: fixed;
-    right: -300px; 
-}
-/*posição icone de menu*/
-#icone{
-    cursor: pointer;
-    padding: 15px;
-    position: fixed;
-    z-index: 1;
-    right: 7%;
-}
-/***********/
-.imagePrincipal{
-    margin-top: 15px;
-   position: relative;
-    width: 400px; 
-}
-/****stylo principal do id **/
-#Cp{
-    display: flex;
-    justify-content: flex-start;
-    align-items: stretch;
-}
-/**conteudo pg inicial**/
-.conteudoP{  
-  align-self: center;
-  width: 550px;
-  font-size: 16px;
-  font-family: Arial, Helvetica, sans-serif;
-  color: white;
-
-}
-#Cp > .conteudoP{    
-  margin-left: 90px;
-}
-.ConteudoParagrafo{
-    text-align: justify;
-    font-size: 14px;
-}
-/**escondendo paragrafo**/
-.paragrafoEscondido{
-    visibility: hidden;
    
 }
+h3{
+font-size: 20px;
+margin-top: 5px;
+background-color: rgba(255, 255, 0, 0.671);
+width: 230px;
+}
+h1{margin-bottom: 5px;
+    font-size: 60px;
+    margin-top: 10px;
+}
+h2{
+    margin-bottom: 5px;
+font-size: 35px;
+}
+.contePri{
+    text-align: justify;
+    position: absolute;
+    right: 6%;
+    top: 40%;
+  
+    width: 550px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 .buttonP{
-    width: 150px;
-    height: 40px;
-    border-radius: 15px;
-    border-style: solid;
+    color: rgb(0, 0, 0);
+    font-weight: bolder;
+   
+    width: 180px;
+    height: 45px;
+    border-radius: 10px;
+    border-style:  solid;
+    border-color: yellow;
     background-color: rgb(235, 235, 33);
     /**cursor do mouser aparecer**/
     cursor: pointer;
@@ -118,5 +63,740 @@ li:hover{
 .buttonP:hover{
     background-color: yellow;
 }
+a{
+    text-decoration: none;
+}
+ul{
+    
+    margin-top: 15px;
+    
+   
+}
+li{
+    font-weight: bolder;
+    color: white;
+    list-style: none;
+    display: inline; 
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+     width: 100%;
+    /* border-bottom: 2px solid #222; */
+    padding: 7px;
+    /* border-radius: 10px; */
+    
+}
+li:hover{
+    color: yellow;
+}
+#menu{
+    height: 100px;
+    text-align: right;
+    width: 100%;
+     position: fixed;
+     right: 9%;
+     top: 5%;
+    
+ }
 
 
+
+#check{
+    display: none;
+}
+
+#icone{
+    display:none;
+}
+
+
+@media screen and (max-width: 950px){
+    /****ficar visivel o position fixed dispositivel movel*/
+    backface-visibility hidden
+    .contePri{
+        right:6%;
+        font-size: 16px;
+        width: 550px;
+        top:40%;
+        
+            }
+    
+        #check:checked ~ .barra{
+            transform: translateX(-380px);
+                                 }
+          /*stylo e fazendo barra de menu aparecer*/
+          .barra{
+              height: 100%;
+            width: 200px;
+            right: -380px; 
+            transition: all .2s linear;
+            position: fixed;
+            background-color: rgba(255, 255, 255, 0.329);
+                }
+          #icone{
+            right: 0%; 
+            cursor: pointer;
+            position: fixed;
+            z-index: 1;
+            padding: 15px;
+            display: inline;
+                }
+          
+          #menu{
+              position: absolute;
+            top: 50px;
+            right:  10%;
+            text-align: right;
+               }
+          #imgIC{
+             width: 30px;
+                }
+          
+          body{
+              background-color: #3f3f3f;
+             width:950px ;
+              }
+              li{
+                  transition: all .2s linear;
+                  display: block;
+                  padding-bottom: 15px;
+              }
+}
+ 
+ 
+ @media screen and (max-width: 850px){
+    .contePri{
+        
+        right:0%;
+        font-size: 16px;
+        width: 530px;
+        top: 40%;
+        text-shadow: 2px  3px rgb(0, 0, 0)
+            }
+    .h1P{
+        font-size: 60px;
+        }
+    .h2P{
+        font-size: 30px;
+        }
+        h3{font-size: 20px;
+        }
+        #check:checked ~ .barra{
+            transform: translateX(-680px);
+                                 }
+          /*stylo e fazendo barra de menu aparecer*/
+          .barra{
+            width: 210px;
+            right: -680px; 
+                }
+          #icone{
+            right: 0%; 
+                }
+          
+          #menu{
+            top: 50px;
+            right:  10%;
+            text-align: right;
+               }
+          #imgIC{
+             width: 25px;
+                }
+          
+          body{
+              background-color: #3f3f3f;
+             width:840px ;
+              }
+              li{
+                  padding-bottom: 15px;
+              }
+              .buttonP{
+                width: 150px;
+                height: 35px;
+                
+            }
+ 
+ }
+ @media screen and (max-width: 740px){
+    .contePri{
+        
+        right:-2%;
+        font-size: 16px;
+        width: 530px;
+        top: 40%;
+            }
+    .h1P{
+        font-size: 50px;
+        }
+    .h2P{
+        font-size: 30px;
+        }
+        h3{font-size: 20px;
+        }
+        #check:checked ~ .barra{
+            transform: translateX(-680px);
+                                 }
+          /*stylo e fazendo barra de menu aparecer*/
+          .barra{
+            width: 210px;
+            right: -680px; 
+                }
+          #icone{
+            right: 0%; 
+                }
+          
+          #menu{
+            top: 50px;
+            right:  10%;
+            text-align: right;
+               }
+          #imgIC{
+             width: 25px;
+                }
+          
+          body{
+              background-color: #3f3f3f;
+             width:740px ;
+              }
+              li{
+                  padding-bottom: 15px;
+              }
+              .buttonP{
+                width: 140px;
+                height: 32px;
+                
+            }
+    
+ }
+ @media screen and (max-width: 690px){
+ 
+    .contePri{
+        
+        right:-2%;
+        font-size: 16px;
+        width: 520px;
+        top: 40%;
+            }
+    .h1P{
+        font-size: 50px;
+        }
+    .h2P{
+        font-size: 30px;
+        }
+        h3{font-size: 20px;
+        }
+        #check:checked ~ .barra{
+            transform: translateX(-690px);
+                                 }
+          /*stylo e fazendo barra de menu aparecer*/
+          .barra{
+            width: 690px;
+            right: -690px; 
+                }
+                #icone{
+                    right: 0%; 
+                        }
+          
+          #menu{
+            top: 100px;
+            right:  5%;
+            text-align: center;
+               }
+          #imgIC{
+             width: 25px;
+                }
+          
+          body{
+              background-color: #3f3f3f;
+             width:690px ;
+              }
+              li{
+                  padding-bottom: 15px;
+              }
+              .buttonP{
+                width: 130px;
+                height: 30px;
+                
+            }
+   
+   
+ }
+ @media screen and (max-width: 610px){ /************************/
+    #header{
+        
+        
+        background-image: url("img/WhatsApp\ Image\ 2021-08-09\ at\ 22.10.56\ \(2\)3.png");
+        
+       
+    }
+    .contePri{
+        
+        right:-10%;
+        font-size: 16px;
+        width: 500px;
+        top: 40%;
+            }
+    .h1P{
+        font-size: 45px;
+        }
+    .h2P{
+        font-size: 25px;
+        }
+        h3{font-size: 15px;
+            width: 190px;
+        }
+        #check:checked ~ .barra{
+            transform: translateX(-620px);
+                                 }
+          /*stylo e fazendo barra de menu aparecer*/
+          .barra{
+            width: 620px;
+            right: -620px; 
+                }
+                #icone{
+                    right: 0%; 
+                        }
+          
+          #menu{
+            top: 100px;
+            right:  5%;
+            text-align: center;
+               }
+          #imgIC{
+             width: 25px;
+                }
+          
+          body{
+              background-color: #3f3f3f;
+             width:610px ;
+              }
+              li{
+                  padding-bottom: 15px;
+              }
+              .buttonP{
+                width: 115px;
+                height: 28px;
+                
+            }
+ }
+ 
+ @media screen and (max-width: 560px){
+    .contePri{
+        right:-10%;
+        font-size: 15px;
+        width: 480px;
+        top: 40%;
+            }
+    .h1P{
+        font-size: 40px;
+        }
+    .h2P{
+        font-size: 25px;
+        }
+        h3{font-size: 15px;
+            width: 190px;
+        }
+        #check:checked ~ .barra{
+            transform: translateX(-550px);
+                                 }
+          /*stylo e fazendo barra de menu aparecer*/
+          .barra{
+            width: 550px;
+            right: -550px; 
+                }
+                #icone{
+                    right: 0%; 
+                        }
+          
+          #menu{
+            top: 100px;
+            right:  5%;
+            text-align: center;
+               }
+          #imgIC{
+             width: 25px;
+                }
+          #header{
+            
+                  background-image: url("img/WhatsApp\ Image\ 2021-08-09\ at\ 22.10.56\ \(2\)3.png");
+                 }
+          body{
+              background-color: #3f3f3f;
+             width:560px ;
+              }
+              li{
+                  padding-bottom: 15px;
+              }
+              .buttonP{
+                width: 115px;
+                height: 28px;
+                
+            }
+   
+ }
+ @media screen and (max-width: 530px){
+    .contePri{
+        right:-11%;
+        font-size: 15px;
+        width: 450px;
+        top: 40%;
+            }
+    .h1P{
+        font-size: 40px;
+        }
+    .h2P{
+        font-size: 25px;
+        }
+        #check:checked ~ .barra{
+            transform: translateX(-550px);
+                                 }
+          /*stylo e fazendo barra de menu aparecer*/
+          .barra{
+            width: 550px;
+            right: -550px; 
+                }
+                #icone{
+                    right: 0%; 
+                        }
+          
+          #menu{
+            top: 100px;
+            right:  5%;
+            text-align: center;
+               }
+          #imgIC{
+             width: 25px;
+                }
+          #header{
+            
+                  background-image: url("img/WhatsApp\ Image\ 2021-08-09\ at\ 22.10.56\ \(2\)3.png");
+                 }
+          body{
+              background-color: #3f3f3f;
+             width:530px ;
+              }
+              li{
+                  padding-bottom: 15px;
+              }
+              .buttonP{
+                width: 110px;
+                height: 25px;
+                
+            }
+  
+   
+ }
+ @media screen and (max-width: 500px){
+    .contePri{
+        right:-12%;
+        font-size: 15px;
+        width: 420px;
+        top: 40%;
+            }
+    .h1P{
+        font-size: 40px;
+        }
+    .h2P{
+        font-size: 25px;
+        }
+        #check:checked ~ .barra{
+            transform: translateX(-500px);
+                                 }
+          /*stylo e fazendo barra de menu aparecer*/
+          .barra{
+            width: 500px;
+            right: -500px; 
+                }
+                #icone{
+                    right: 0%; 
+                        }
+          
+          #menu{
+            top: 100px;
+            right:  5%;
+            text-align: center;
+               }
+          #imgIC{
+             width: 25px;
+                }
+          #header{
+            
+                  background-image: url("img/WhatsApp\ Image\ 2021-08-09\ at\ 22.10.56\ \(2\)3.png");
+                 }
+          body{
+              background-color: #3f3f3f;
+             width:500px ;
+              }
+              li{
+                  padding-bottom: 15px;
+              }
+              .buttonP{
+                width: 110px;
+                height: 25px;
+                
+            }
+  
+ }
+ @media screen and (max-width: 480px){
+    .contePri{
+        right:-12%;
+        font-size: 14px;
+        width: 400px;
+        top: 40%;
+            }
+    .h1P{
+        font-size: 38px;
+        }
+    .h2P{
+        font-size: 24px;
+        }
+        h3{font-size: 14px;
+            width: 170px;
+        }
+        #check:checked ~ .barra{
+            transform: translateX(-500px);
+                                 }
+          /*stylo e fazendo barra de menu aparecer*/
+          .barra{
+            width: 500px;
+            right: -500px; 
+                }
+                #icone{
+                    right: 0%; 
+                        }
+          
+          #menu{
+            top: 100px;
+            right:  5%;
+            text-align: center;
+               }
+          #imgIC{
+             width: 25px;
+                }
+          #header{
+            
+                  background-image: url("img/WhatsApp\ Image\ 2021-08-09\ at\ 22.10.56\ \(2\)3.png");
+                 }
+          body{
+              background-color: #3f3f3f;
+             width:480px ;
+              }
+              li{
+                  padding-bottom: 15px;
+              }
+              .buttonP{
+                width: 110px;
+                height: 25px;
+                
+            }
+   
+ }
+ 
+ @media screen and (max-width: 430px){
+    .contePri{
+        right:-13%;
+        font-size: 14px;
+        width: 370px;
+        top: 40%;
+            }
+    .h1P{
+        font-size: 35px;
+        }
+    .h2P{
+        font-size: 23px;
+        }
+        h3{font-size: 13px;
+            width: 160px;
+        }
+        #check:checked ~ .barra{
+            transform: translateX(-500px);
+                                 }
+          /*stylo e fazendo barra de menu aparecer*/
+          .barra{
+            width: 500px;
+            right: -500px; 
+                }
+                #icone{
+                    right: 0%; 
+                        }
+          
+          #menu{
+            top: 100px;
+            right:  0%;
+            text-align: center;
+               }
+          #imgIC{
+             width: 25px;
+                }
+          #header{
+            
+                  background-image: url("img/WhatsApp\ Image\ 2021-08-09\ at\ 22.10.56\ \(2\)3.png");
+                 }
+          body{
+              background-color: #3f3f3f;
+             width:430px ;
+              }
+              li{
+                  padding-bottom: 15px;
+              }
+              .buttonP{
+                width: 100px;
+                height: 20px;
+                
+            }
+ 
+}
+ 
+ 
+ @media screen and (max-width: 400px){
+    .contePri{
+        right:-14%;
+        font-size: 14px;
+        width: 350px;
+        top: 40%;
+            }
+    .h1P{
+        font-size: 35px;
+        }
+    .h2P{
+        font-size: 24px;
+        }
+        #check:checked ~ .barra{
+            transform: translateX(-500px);
+                                 }
+          /*stylo e fazendo barra de menu aparecer*/
+          .barra{
+            width: 400px;
+            right: -500px; 
+                }
+                #icone{
+                    right: 0%; 
+                        }
+          
+          #menu{
+            top: 100px;
+            right:  5%;
+            text-align: center;
+               }
+          #imgIC{
+             width: 25px;
+                }
+          #header{
+            
+                  background-image: url("img/WhatsApp\ Image\ 2021-08-09\ at\ 22.10.56\ \(2\)3.png");
+                 }
+          body{
+              background-color: #3f3f3f;
+             width:400px ;
+              }
+              li{
+                  padding-bottom: 15px;
+              }
+              .buttonP{
+                width: 105px;
+                height: 23px;
+                
+            }
+ }
+
+ @media screen and (max-width: 350px){
+    .contePri{
+        right:-15%;
+        font-size: 13px;
+        width: 300px;
+        top: 40%;
+            }
+    .h1P{
+        font-size: 32px;
+        }
+    .h2P{
+        font-size: 22px;
+        }
+        h3{font-size: 13px;
+            width: 160px;
+        }
+        #check:checked ~ .barra{
+            transform: translateX(-500px);
+                                 }
+          /*stylo e fazendo barra de menu aparecer*/
+          .barra{
+            width: 400px;
+            right: -500px; 
+                }
+                #icone{
+                    right: 0%; 
+                        }
+          
+          #menu{
+            top: 100px;
+            right:  6%;
+            text-align: center;
+               }
+          #imgIC{
+             width: 25px;
+                }
+          #header{
+            
+                  background-image: url("img/WhatsApp\ Image\ 2021-08-09\ at\ 22.10.56\ \(2\)3.png");
+                 }
+          body{
+              background-color: #3f3f3f;
+             width:350px ;
+              }
+              li{
+                  padding-bottom: 15px;
+              }
+              .buttonP{
+                width: 100px;
+                height: 20px;
+                
+            }
+ }
+ @media screen and (max-width: 330px){
+    .contePri{
+        right:-18%;
+        font-size: 13px;
+        width: 290px;
+        top: 40%;
+            }
+    .h1P{
+        font-size: 30px;
+        }
+    .h2P{
+        font-size: 21px;
+        }
+ #check:checked ~ .barra{
+   transform: translateX(-500px);
+                        }
+ /*stylo e fazendo barra de menu aparecer*/
+ .barra{
+   width: 400px;
+   right: -500px; 
+       }
+       #icone{
+        right: 0%; 
+            }
+ 
+ #menu{
+   top: 100px;
+   right:  0%;
+   text-align: center;
+      }
+ #imgIC{
+    width: 25px;
+       }
+ #header{
+   
+         background-image: url("img/WhatsApp\ Image\ 2021-08-09\ at\ 22.10.56\ \(2\)3.png");
+        }
+ body{
+     background-color: #3f3f3f;
+    width:330px ;
+     }
+     li{
+         padding-bottom: 15px;
+     }
+     .buttonP{
+        width: 100px;
+        height: 20px;
+        
+    }
+    }
