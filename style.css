@@ -2,19 +2,26 @@ body{
     margin: 0%;
     padding: 0%;
     width: 1300px;
-    height: 2000px;
+    
     /* background-color: #3f3f3f;   */ 
-    background-color: #3f3f3f;
+    background-color: #0d0d0d;
     
 }
+.Ap{
+    border-radius: 50%;
+    border-style: solid;
+    border-color: rgb(228, 32, 32);
+    background-color: rgb(228, 32, 32);
+}
 .Lihome{
-    color: yellow;
-    text-shadow: 0.4px  0.8px rgb(248, 242, 242)
+
+    font-weight: bolder;
+    /* text-shadow: 0.1px  0.3px rgb(248, 242, 242) */
 }
 #header{
     margin: auto;
     max-width: 1200px;
-    background-image: url("img/Sem\ títul00o.png");
+    background-image: url("img/p.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -22,11 +29,11 @@ body{
     
    
 }
-h3{
+.h3Header{
 font-size: 20px;
 margin-top: 5px;
-background-color: rgba(255, 255, 0, 0.671);
-width: 230px;
+background-color: rgba(255, 0, 0, 0.726);
+width: 260px;
 }
 h1{margin-bottom: 5px;
     font-size: 60px;
@@ -55,16 +62,17 @@ font-size: 35px;
     height: 45px;
     border-radius: 10px;
     border-style:  solid;
-    border-color: yellow;
-    background-color: rgb(235, 235, 33);
+    border-color: rgb(255, 24, 24);
+    background-color: rgb(255, 24, 24);
     /**cursor do mouser aparecer**/
     cursor: pointer;
 }
 .buttonP:hover{
-    background-color: yellow;
+    background-color: red;
 }
 a{
     text-decoration: none;
+    
 }
 ul{
     
@@ -73,8 +81,9 @@ ul{
    
 }
 li{
-    font-weight: bolder;
-    color: white;
+    
+    font-weight: 900;
+    color: #ffffff;
     list-style: none;
     display: inline; 
     font-family: Arial, Helvetica, sans-serif;
@@ -83,10 +92,17 @@ li{
     /* border-bottom: 2px solid #222; */
     padding: 7px;
     /* border-radius: 10px; */
+ 
     
 }
 li:hover{
-    color: yellow;
+    color: red;
+}
+.iconeLista{
+    width: 25px;
+    height: 20px;
+  
+   
 }
 #menu{
     height: 100px;
@@ -108,7 +124,50 @@ li:hover{
     display:none;
 }
 
-
+/****************************CSS PARTE SOBRE MIM****************************************/
+main{
+    margin-top: 100px;
+}
+.H1main{
+    color: white;
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 40px;
+}
+.sobre{
+    color: white;
+    display: flex;
+    height: 500px;
+    justify-content: space-evenly;
+}
+.imgSobre{  
+            
+            height: 100%;
+            border-radius: 20px;
+            border-color:#ececec ;
+        }
+.ConteudoSobre{
+    font-size: 20px;
+    text-align: justify;
+    width: 600px;
+}
+.sobreCores{
+    color: red;
+}
+.CurriculoS{
+    color: white;
+    text-align: center;
+}
+.CurriculoD{
+   
+    border-radius: 10px;
+    border-bottom: red;
+    background-color: red;
+    
+    width: 150px;
+    
+    
+}
 @media screen and (max-width: 950px){
     /****ficar visivel o position fixed dispositivel movel*/
     backface-visibility hidden
@@ -121,16 +180,16 @@ li:hover{
             }
     
         #check:checked ~ .barra{
-            transform: translateX(-380px);
+            transform: translateX(-680px);
                                  }
           /*stylo e fazendo barra de menu aparecer*/
           .barra{
               height: 100%;
             width: 200px;
-            right: -380px; 
+            right: -680px; 
             transition: all .2s linear;
             position: fixed;
-            background-color: rgba(255, 255, 255, 0.329);
+            background-color: rgba(0, 0, 0, 0.329);
                 }
           #icone{
             right: 0%; 
@@ -144,7 +203,7 @@ li:hover{
           #menu{
               position: absolute;
             top: 50px;
-            right:  10%;
+            right:  8%;
             text-align: right;
                }
           #imgIC{
@@ -152,14 +211,38 @@ li:hover{
                 }
           
           body{
-              background-color: #3f3f3f;
+              background-color: #0d0d0d;
+    
              width:950px ;
               }
               li{
                   transition: all .2s linear;
-                  display: block;
+                  display:block;
                   padding-bottom: 15px;
+                  color: red;
+                  
               }
+              li:hover{
+                  background-color: rgba(255, 0, 0, 0.692);
+                  
+                 
+              }
+              .Ap{border: none;}
+              /********************parte sobre mim****************/
+
+              .ConteudoSobre{
+                font-size: 20px;
+                text-align: justify;
+                width: 500px;
+            }
+            .H1main{
+                color: white;
+                text-align: center;
+                margin-bottom: 40px;
+                font-size: 40px;
+            }
+           
+
 }
  
  
@@ -202,7 +285,7 @@ li:hover{
                 }
           
           body{
-              background-color: #3f3f3f;
+              
              width:840px ;
               }
               li{
@@ -212,6 +295,24 @@ li:hover{
                 width: 150px;
                 height: 35px;
                 
+            }
+            #header{
+                
+                background-image: url("img/euuuu.png");/*************/
+
+            }
+              /********************parte sobre mim****************/
+
+              .ConteudoSobre{
+                font-size: 19px;
+                text-align: justify;
+                width: 450px;
+            }
+            .H1main{
+                color: white;
+                text-align: center;
+                margin-bottom: 40px;
+                font-size: 37px;
             }
  
  }
@@ -253,7 +354,7 @@ li:hover{
                 }
           
           body{
-              background-color: #3f3f3f;
+              
              width:740px ;
               }
               li{
@@ -261,9 +362,21 @@ li:hover{
               }
               .buttonP{
                 width: 140px;
-                height: 32px;
-                
-            }
+                height: 32px;  
+            }   
+/********************parte sobre mim****************/
+
+            .ConteudoSobre{
+              font-size: 19px;
+              text-align: justify;
+              width: 400px;
+          }
+          .H1main{
+              color: white;
+              text-align: center;
+              margin-bottom: 40px;
+              font-size: 35px;
+          }
     
  }
  @media screen and (max-width: 690px){
@@ -305,7 +418,7 @@ li:hover{
                 }
           
           body{
-              background-color: #3f3f3f;
+             
              width:690px ;
               }
               li{
@@ -316,6 +429,32 @@ li:hover{
                 height: 30px;
                 
             }
+            /********************parte sobre mim****************/
+
+            .ConteudoSobre{
+                font-size: 19px;
+                text-align: justify;
+                width: 490px;
+                margin: auto;
+            }
+            .H1main{
+                color: white;
+                text-align: center;
+                margin-bottom: 40px;
+                font-size: 35px;
+            }
+            .sobre{
+
+                margin: auto;
+                color: white;
+                display: block;
+                height: 500px;
+                
+            }
+            .imgSobre{  
+                        
+                       display: none;
+                    }
    
    
  }
@@ -323,7 +462,7 @@ li:hover{
     #header{
         
         
-        background-image: url("img/WhatsApp\ Image\ 2021-08-09\ at\ 22.10.56\ \(2\)3.png");
+        background-image: url("img/euuuu.png");
         
        
     }
@@ -340,7 +479,7 @@ li:hover{
     .h2P{
         font-size: 25px;
         }
-        h3{font-size: 15px;
+        .h3Header{font-size: 15px;
             width: 190px;
         }
         #check:checked ~ .barra{
@@ -365,7 +504,7 @@ li:hover{
                 }
           
           body{
-              background-color: #3f3f3f;
+              
              width:610px ;
               }
               li{
@@ -375,6 +514,32 @@ li:hover{
                 width: 115px;
                 height: 28px;
                 
+            }
+            .ConteudoSobre{
+                font-size: 19px;
+                text-align: justify;
+                width: 450px;
+                margin: auto;
+            }
+/**********sobre mim***********/
+            .H1main{
+                color: white;
+                text-align: center;
+                margin-bottom: 40px;
+                font-size: 35px;
+            }
+            .sobre{
+
+                margin: auto;
+                color: white;
+                display: block;
+                height: 500px;
+            }
+            .ConteudoSobre{
+                font-size: 19px;
+                text-align: justify;
+                width: 470px;
+                margin: auto;
             }
  }
  
@@ -391,7 +556,7 @@ li:hover{
     .h2P{
         font-size: 25px;
         }
-        h3{font-size: 15px;
+        .h3Header{font-size: 15px;
             width: 190px;
         }
         #check:checked ~ .barra{
@@ -414,12 +579,9 @@ li:hover{
           #imgIC{
              width: 25px;
                 }
-          #header{
-            
-                  background-image: url("img/WhatsApp\ Image\ 2021-08-09\ at\ 22.10.56\ \(2\)3.png");
-                 }
+         
           body{
-              background-color: #3f3f3f;
+             
              width:560px ;
               }
               li{
@@ -429,6 +591,46 @@ li:hover{
                 width: 115px;
                 height: 28px;
                 
+            }
+            /**********sobre mim***********/
+            .H1main{
+                color: white;
+                text-align: center;
+                margin-bottom: 40px;
+                font-size: 32px;
+            }
+            .sobre{
+
+                margin: auto;
+                color: white;
+                display: block;
+                height: 500px;
+            }
+            .ConteudoSobre{
+                font-size: 18px;
+                text-align: justify;
+                width: 450px;
+                margin: auto;
+            }
+            /**********sobre mim***********/
+            .H1main{
+                color: white;
+                text-align: center;
+                margin-bottom: 40px;
+                font-size: 32px;
+            }
+            .sobre{
+
+                margin: auto;
+                color: white;
+                display: block;
+                height: 500px;
+            }
+            .ConteudoSobre{
+                font-size: 19px;
+                text-align: justify;
+                width: 460px;
+                margin: auto;
             }
    
  }
@@ -465,12 +667,9 @@ li:hover{
           #imgIC{
              width: 25px;
                 }
-          #header{
-            
-                  background-image: url("img/WhatsApp\ Image\ 2021-08-09\ at\ 22.10.56\ \(2\)3.png");
-                 }
+         
           body{
-              background-color: #3f3f3f;
+             
              width:530px ;
               }
               li{
@@ -479,7 +678,26 @@ li:hover{
               .buttonP{
                 width: 110px;
                 height: 25px;
-                
+            }
+            /**********sobre mim***********/
+            .H1main{
+                color: white;
+                text-align: center;
+                margin-bottom: 40px;
+                font-size: 31px;
+            }
+            .sobre{
+
+                margin: auto;
+                color: white;
+                display: block;
+                height: 500px;
+            }
+            .ConteudoSobre{
+                font-size: 18px;
+                text-align: justify;
+                width: 460px;
+                margin: auto;
             }
   
    
@@ -517,12 +735,9 @@ li:hover{
           #imgIC{
              width: 25px;
                 }
-          #header{
-            
-                  background-image: url("img/WhatsApp\ Image\ 2021-08-09\ at\ 22.10.56\ \(2\)3.png");
-                 }
+          
           body{
-              background-color: #3f3f3f;
+              
              width:500px ;
               }
               li{
@@ -531,7 +746,26 @@ li:hover{
               .buttonP{
                 width: 110px;
                 height: 25px;
-                
+            }
+             /**********sobre mim***********/
+             .H1main{
+                color: white;
+                text-align: center;
+                margin-bottom: 40px;
+                font-size: 30px;
+            }
+            .sobre{
+
+                margin: auto;
+                color: white;
+                display: block;
+                height: 500px;
+            }
+            .ConteudoSobre{
+                font-size: 18px;
+                text-align: justify;
+                width: 440px;
+                margin: auto;
             }
   
  }
@@ -548,7 +782,7 @@ li:hover{
     .h2P{
         font-size: 24px;
         }
-        h3{font-size: 14px;
+        .h3Header{font-size: 14px;
             width: 170px;
         }
         #check:checked ~ .barra{
@@ -571,12 +805,9 @@ li:hover{
           #imgIC{
              width: 25px;
                 }
-          #header{
-            
-                  background-image: url("img/WhatsApp\ Image\ 2021-08-09\ at\ 22.10.56\ \(2\)3.png");
-                 }
+         
           body{
-              background-color: #3f3f3f;
+            
              width:480px ;
               }
               li{
@@ -584,9 +815,28 @@ li:hover{
               }
               .buttonP{
                 width: 110px;
-                height: 25px;
-                
+                height: 25px; 
             }
+                   /**********sobre mim***********/
+                   .H1main{
+                    color: white;
+                    text-align: center;
+                    margin-bottom: 40px;
+                    font-size: 28px;
+                }
+                .sobre{
+    
+                    margin: auto;
+                    color: white;
+                    display: block;
+                    height: 500px;
+                }
+                .ConteudoSobre{
+                    font-size: 17px;
+                    text-align: justify;
+                    width: 420px;
+                    margin: auto;
+                }
    
  }
  
@@ -603,7 +853,7 @@ li:hover{
     .h2P{
         font-size: 23px;
         }
-        h3{font-size: 13px;
+        .h3Header{font-size: 13px;
             width: 160px;
         }
         #check:checked ~ .barra{
@@ -626,12 +876,9 @@ li:hover{
           #imgIC{
              width: 25px;
                 }
-          #header{
-            
-                  background-image: url("img/WhatsApp\ Image\ 2021-08-09\ at\ 22.10.56\ \(2\)3.png");
-                 }
+        
           body{
-              background-color: #3f3f3f;
+             
              width:430px ;
               }
               li{
@@ -642,6 +889,27 @@ li:hover{
                 height: 20px;
                 
             }
+                   /**********sobre mim***********/
+                   .H1main{
+                    color: white;
+                    text-align: center;
+                    margin-bottom: 40px;
+                    font-size: 27px;
+                }
+                .sobre{
+    
+                    margin: auto;
+                    color: white;
+                    display: block;
+                    height: 500px;
+                }
+                .ConteudoSobre{
+                    font-size: 17px;
+                    text-align: justify;
+                    width: 390px;
+                    margin: auto;
+                }
+                .sobreCores{ font-size: 18px;}
  
 }
  
@@ -679,12 +947,9 @@ li:hover{
           #imgIC{
              width: 25px;
                 }
-          #header{
-            
-                  background-image: url("img/WhatsApp\ Image\ 2021-08-09\ at\ 22.10.56\ \(2\)3.png");
-                 }
+        
           body{
-              background-color: #3f3f3f;
+            
              width:400px ;
               }
               li{
@@ -693,8 +958,28 @@ li:hover{
               .buttonP{
                 width: 105px;
                 height: 23px;
-                
             }
+                /**********sobre mim***********/
+                .H1main{
+                    color: white;
+                    text-align: center;
+                    margin-bottom: 40px;
+                    font-size: 27px;
+                }
+                .sobre{
+    
+                    margin: auto;
+                    color: white;
+                    display: block;
+                    height: 500px;
+                }
+                .ConteudoSobre{
+                    font-size: 17px;
+                    text-align: justify;
+                    width: 340px;
+                    margin: auto;
+                }
+                .sobreCores{ font-size: 18px;}
  }
 
  @media screen and (max-width: 350px){
@@ -733,12 +1018,9 @@ li:hover{
           #imgIC{
              width: 25px;
                 }
-          #header{
-            
-                  background-image: url("img/WhatsApp\ Image\ 2021-08-09\ at\ 22.10.56\ \(2\)3.png");
-                 }
+        
           body{
-              background-color: #3f3f3f;
+              
              width:350px ;
               }
               li{
@@ -749,6 +1031,27 @@ li:hover{
                 height: 20px;
                 
             }
+             /**********sobre mim***********/
+             .H1main{
+                color: white;
+                text-align: center;
+                margin-bottom: 40px;
+                font-size: 25px;
+            }
+            .sobre{
+
+                margin: auto;
+                color: white;
+                display: block;
+                height: 500px;
+            }
+            .ConteudoSobre{
+                font-size: 16px;
+                text-align: justify;
+                width: 320px;
+                margin: auto;
+            }
+            .sobreCores{ font-size: 17px;}
  }
  @media screen and (max-width: 330px){
     .contePri{
@@ -783,12 +1086,9 @@ li:hover{
  #imgIC{
     width: 25px;
        }
- #header{
-   
-         background-image: url("img/WhatsApp\ Image\ 2021-08-09\ at\ 22.10.56\ \(2\)3.png");
-        }
+
  body{
-     background-color: #3f3f3f;
+     
     width:330px ;
      }
      li{
@@ -797,6 +1097,26 @@ li:hover{
      .buttonP{
         width: 100px;
         height: 20px;
-        
     }
+       /**********sobre mim***********/
+       .H1main{
+        color: white;
+        text-align: center;
+        margin-bottom: 40px;
+        font-size: 24px;
+    }
+    .sobre{
+
+        margin: auto;
+        color: white;
+        display: block;
+        height: 500px;
+    }
+    .ConteudoSobre{
+        font-size: 16px;
+        text-align: justify;
+        width: 300px;
+        margin: auto;
+    }
+    .sobreCores{ font-size: 16px;}
     }
